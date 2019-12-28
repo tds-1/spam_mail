@@ -54,7 +54,6 @@ def first_page_post():
 		sender=("Admin", MAIL_ID), 
 		recipients=[sheet.cell_value(i,row)],
 		body="this is a test mail")
-		mymail.send(msg)
-	
+		mymail.send(msg)	
 
 	return render_template("addnewvisitor.html")
