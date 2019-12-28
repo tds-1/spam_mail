@@ -1,10 +1,10 @@
-import xlrd
 import os
 from os import environ
 import smtplib
 from flask_mail import Mail, Message
 from flask import Flask, render_template, request, redirect, jsonify, make_response
 import flask
+import xlrd
 
 app = Flask(__name__, static_folder="static_dir")
 
